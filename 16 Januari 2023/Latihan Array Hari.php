@@ -8,6 +8,7 @@
 
         <?php
 
+        // ARRAY HARI (INDEKS)
         $hari = [
         "Senin",
         "Selasa",
@@ -17,33 +18,54 @@
         "Sabtu",
         "Minggu",
          ];
+        // ARRAY HARI (INDEKS)
 
         print_r($hari);
 
-        echo "<br>";
-        echo "<br>";
-        echo "<br>";
+        echo "<div style='margin-bottom: 20px;'></div>";
 
+        // PERULANGAN FOR
         $ch = count($hari);
-        $d = $hari;
         for ($a = 0; $a < $ch; $a++){
-          echo "<div style='background-color: pink; margin: 3px; float: left; padding: 10px;'> $hari[$a] </div>";
+          echo "<div
+          style='background-color: red;
+          margin: 3px;
+          float: left;
+          width: 60px;
+          text-align: center;
+          padding: 10px;'> $hari[$a] </div>";
         }
+        // PERULANGAN FOR
+        
+        // JUDUL FOR
         echo "<div style='clear: both';></div>";
-        echo "<div><b>Perulangan For</b></div>";
+        echo "<div</div><b>Perulangan For</b></div>";
+        // JUDUL FOR
 
         echo "<div style='clear: both; margin: 20px;'></div>";
 
+        // PERULANGAN FOREACH
         foreach ($hari as $h){
-            echo "<div style='background-color: orangered; margin: 3px; float: left; padding: 10px;'> $h </div>";;
+            echo "<div
+            style='background-color: orangered;
+            margin: 3px;
+            float: left;
+            width: 60px;
+            text-align: center;
+            padding: 10px;'> $h </div>";;
         }
+        // PERULANGAN FOREACH
+
+        // JUDUL FOREACH
         echo "<div style='clear: both';></div>";
         echo "<div><b>Perulangan ForEach</b></div>";
-        echo "<div style='margin-bottom: 5px;'></div>";
+        // JUDUL FOREACH
 
-        echo "Total Hari : " . count($hari);
+        echo "<div style='margin-bottom: 20px;'></div>";
 
-        // echo count($hari);
+        // TOTAL ARRAY
+        echo "<b>Total Hari</b> : " . count($hari);
+        // TOTAL ARRAY
 
         ?>
 
