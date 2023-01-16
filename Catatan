@@ -1,0 +1,55 @@
+Selasa, 10 Januari 2023
+PHP (Pak Eko)
+
+-- ARRAY DALAM PHP --
+
+Struktur data yang memiliki sekumpulan data dan memiliki indeks.
+
+1. Array Terindeks
+Memiliki indeks berupa angka
+-> 0 - 1 - 2 - dst
+-> $tes[1]
+
+2.Array Asosiatif
+Memiliki indeks/key tetapi tidak berupa angka melainkan berupa huruf
+-> "nama" => "eko", "kelas" => "XI"
+-> $tes[kelas]
+
+3.Array Multidimensi
+Array Yang Berada Didalam Array dst
+-> $menu = [
+        "menu makanan" =>
+            [
+            'Nasi Goreng',
+            'Mie Goreng'
+            ],
+     
+        "menu minuman" =>
+            [
+            'Es Jeruk',
+            'Kelapa Muda',
+            
+        "cappucino" =>
+            [
+            'Cappucino Dingin',
+            'Cappucino Panas'
+            ]
+            ]
+        ];
+->  echo $menu["menu makanan"][1];
+        echo "<br>";
+        echo $menu["menu minuman"][1];
+        echo "<br>";
+        echo $menu["menu minuman"]["cappucino"][0];
+
+
+Rabu, 11 Januari 2023
+LARAVEL (Buk Dussi)
+
+-- CARA CEK VERSI PHP --
+-> C:\xampp\php> php -v 
+
+-- CARA CEK GIT --
+-> Buka terminal dan cek Git Bash. Jika ada, berarti Git telah terinstal di Komputer/Laptop anda.
+
+-- INSTALL COMPOSER -- 
