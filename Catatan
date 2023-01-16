@@ -1,5 +1,5 @@
 Selasa, 10 Januari 2023
-PHP (Pak Eko)
+PHP-Jenis Array (Pak Eko)
 
 -- ARRAY DALAM PHP --
 
@@ -53,3 +53,30 @@ LARAVEL (Buk Dussi)
 -> Buka terminal dan cek Git Bash. Jika ada, berarti Git telah terinstal di Komputer/Laptop anda.
 
 -- INSTALL COMPOSER -- 
+
+Senin, 16 Januari 2023
+PHP-Metode Get dan Post (Pak Eko)
+
+-- GET, POST, dan REQUEST --
+
+1. GET
+-> Digunakan untuk mengambil data dari URL
+->  <form action="Proses.php" method="GET">
+    </form>
+-> Action adalah tujuan saat mengklik tombol
+
+2. POST
+-> Digunakan untuk mengambil data dari input form
+->  <form action="Proses.php" method="POST">
+    </form>
+-> Action adalah tujuan saat mengklik tombol
+
+3. REQUEST
+-> Mencakup lebih global (GET dan POST)
+
+-- MENAMPILKAN POST DAN GET --
+1. POST
+-> echo $_POST['name'];
+
+2. GET
+-> echo $_GET['name'];
