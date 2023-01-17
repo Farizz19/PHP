@@ -2,7 +2,10 @@
     <head>
         <title>FORM PHP</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     </head>
     <body>
 
@@ -10,12 +13,22 @@
     <hr>
 
     <form action="Proses.php" method="POST">
-        Nama : <input type="text" name="nama">
+
+        <label>Nama</label>
+        <label>:</label>
+        <input type="text" name="nama">
         <br>
-        Email : <input type="email" name="email">
+
+        <label>Email</label>
+        <label>:</label>
+        <input type="email" name="email">
         <br>
-        Pesan : <textarea name="pesan"></textarea>
+
+        <label>Pesan</label>
+        <label>:</label>
+        <textarea name="pesan"></textarea>
         <br><br>
+        
         <input type="submit" value="simpan">
     </form>
 
