@@ -31,19 +31,19 @@ $pesan = $_POST['pesan'];
 if ($nama){
     echo
         "nama : {$nama} <br>";
-} if ($nama == '') {
+} else {
     echo "nama belum diisi <br>";}
 
 if ($email){
     echo
         "email :  {$email}  <br>";
-} if ($email == '') {
+} else {
     echo "email belum diisi <br>";}
 
 if ($pesan){
     echo 
     "pesan :  {$pesan}"; 
-} if ($pesan == '') {
+} else {
     echo "pesan belum diisi";}
 
 // if ($nama == '' && $email == '' || $pesan == ''){
