@@ -82,4 +82,6 @@ PHP-Metode Get dan Post (Pak Eko)
 -> echo $_GET['name'];
 
 Selasa, 24 Januari 2023
- (Pak Eko)
+Include, Include Once, Require, Require Once (Pak Eko)
+
+Fungsi yang digunakan untuk menyisipkan file ke dalam file lain
