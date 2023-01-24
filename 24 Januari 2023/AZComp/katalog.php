@@ -2,6 +2,9 @@
     <head>
         <title>AZ Comp</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" 
+        type="image/png" 
+        href="modar.jpg" /> 
     </head>
     <body>
         <div class="container">
@@ -21,12 +24,12 @@
                     <form action="" method="POST" style="padding: 20px;">
                         Pilih Katalog :
                         <select name="katalog">
-                            <!-- <option disabled>Pilih</option> -->
+                            <!-- <option disabled aria-placeholder="pilih">Pilih</option> -->
                             <option value="Hardware">Hardware</option>
                             <option value="Software">Software</option>
                         </select>
             
-                        <input type="submit" value="check">
+                        <input type="submit" name="tombol" value="check">
                         <hr>
                         <table border="3" cellpadding="3" cellspacing="3" width="300">
                             <tr>
@@ -37,17 +40,18 @@
                                 
                             <?php
 
+        if (isset($_POST['tombol'])){
+
         $kt = $_POST['katalog'];
         $no = 1;
         
         $hardware = ["Monitor", "CPU", "Keyboard", "Mouse", "VGA"];
-        $software = ["Windows OS", "Linux OS", "Mac OS"];
+        $software = ["Windows OS", "Linux OS", "MacOS X", "Unix OS"];
         
 
         // if ($kt = ""){
         //     echo "pilih produk";
         // }
-
 
         if ($kt == "Hardware"){
             foreach($hardware as $hw){
@@ -73,6 +77,7 @@
                 $no++;
             }  
         }
+    }
         ?>      
                         </table>
                     </form>
